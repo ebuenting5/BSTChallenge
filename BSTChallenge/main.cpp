@@ -164,6 +164,8 @@ public:
         for (int i = 0; i < k; i++)
         {
             current = current->left;
+            if (current == nullptr)
+                return NULL;
         }
         return current->data;
     }
